@@ -1,11 +1,11 @@
 
-const Header = () => {
+const Header = ({title}) => {
   return (
-    <header style={{
-        backgroundColor: 'mediumblue',
-        color: 'white'
-    }}><h1>Grocery List</h1></header>
+    <header><h1>{title}</h1></header>
   )
 }
 
+Header.defaultProps = {
+  title:"Default Title"
+}
 export default Header
